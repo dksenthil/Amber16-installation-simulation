@@ -5,13 +5,13 @@ source leaprc.DNA.OL15
 source leaprc.lipid14
 source leaprc.gaff2
 source leaprc.water.tip3p
-loadamberprep /usr/soft/amber16/dat/mtkpp/ZAFF/201108/ZAFF.prep
-loadamberparams /usr/soft/amber16/dat/mtkpp/ZAFF/201108/ZAFF.frcmod
-loadamberparams /usr/soft/amber16/dat/leap/parm/frcmod.ionsjc_tip3p
-loadAmberparams /usr/soft/amber16/dat/leap/parm/frcmod.ionslm_1264_tip3p
+loadamberprep /amber16/dat/mtkpp/ZAFF/201108/ZAFF.prep
+loadamberparams amber16/dat/mtkpp/ZAFF/201108/ZAFF.frcmod
+loadamberparams /amber16/dat/leap/parm/frcmod.ionsjc_tip3p
+loadAmberparams /amber16/dat/leap/parm/frcmod.ionslm_1264_tip3p
 loadamberprep dmc.in
 loadamberparams dmc.frcmod
-aa=loadpdb 4x9j_clean_noMe_egr2.pdb 
+aa=loadpdb 4xxx_clean_noMe_egr2.pdb 
 #aa=loadpdb temp_clean.pdb
 
 #Bond zinc ion with ... 
@@ -36,4 +36,4 @@ solvatebox  aa TIP3PBOX 15.0
 addionsrand aa Na+ 0
 addionsrand aa Na+ 43
 addionsrand aa Cl- 43
-saveamberparm aa egr2-DNA_nomethyl_complx.parm7  egr2-DNA_nomethyl_complx.inpcrd 
+saveamberparm aa eguy-DNA_nomethyl_complx.parm7  eguy-DNA_nomethyl_complx.inpcrd 
