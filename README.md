@@ -40,7 +40,8 @@ aptitude install python-numpy python-matplotlib python-scipy ipython  python-not
 ### GCC6 installation
 aptitude install gcc-6 g++-6
 
-#### create Symbolic Links
+#### create Symbolic Links in /usr/bin
+rm -f gcc gcc-ar gcc-nm gcc-ranlin g++ gfortran
 ln -s gcc-6 gcc
 ln -s gcc-ar-6 gcc-ar
 ln -s gcc-nm-6 gcc-nm
