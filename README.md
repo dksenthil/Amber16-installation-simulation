@@ -38,7 +38,7 @@ aptitude install python-numpy python-matplotlib python-scipy ipython  python-not
 
 ```python
 ### GCC6 installation
-aptitude install gcc-6 g++-6
+aptitude install gcc-6 g++-6 gfortran-6
 
 #### create Symbolic Links in /usr/bin
 rm -f gcc gcc-ar gcc-nm gcc-ranlin g++ gfortran
@@ -62,6 +62,7 @@ ln -s /usr/bin/gfortran-6 /usr/bin/gfortran
 
 ## go to netcdf folder followed by make and make install
 cd parallel-netcdf-1.9.0/ 
+./configure
 
 make 
 
